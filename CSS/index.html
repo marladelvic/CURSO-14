@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--Bloque de CSS-->
+
+    <style>
+        h2 {color: #3a86ff;}
+    </style>
+    
+    <!--CSS in external file-->
+
+    <link rel="stylesheet" href="./Styles/styles.css">
+
+</head>
+
+<body>
+    
+    <!--CSS in line (En linea)-->
+
+    <h1 style="color: #8338ec;">Hola Mundo</h1>
+
+    <!--CSS in head (En cabeza)-->
+
+    <h2>Hola Mundo</h2>
+
+    <h3>Titular moradito</h3>
+
+    <!-- Agrupacion de elementos -->
+
+    <!-- 
+        ID 
+        NO SE PUEDEN REPETIR, ES ALGO [UNICO], ES COMO TU CEDULA
+        UN ID NO PUEDE INICIAR CON UN NUMERO JAMAS
+    -->
+
+    <div id="container">
+        <h1>Titulo</h1>
+    </div>
+
+    <!--
+        Clases
+        SON MAS IMPORTANTES QUE LOS ID, SI TENGO CIERTOS ESTILOS
+        QUE QUIERO REPETIR A LO LARGO DEL CODIGO ESTA ES LA MEJOR OPCION
+
+        Si escribo class="subtito parrafo" puedo usarlo de las siguientes maneras en CSS
+        1. .subtitulo .parrafo> con el punto significa que me va a seleccionar 
+        parrafo dentro de subtitulo y solo va a afectar a parrafo
+        2. .subtitulo, .parrafo> si le coloco una coma despues del primer elemento
+        afecta a ambos
+    -->
+
+    <h2 class="subtitulo">Soy parte de un subtitulo</h2>
+    <h2 class="subtitulo">Soy parte de un subtitulo</h2>
+    <h2 class="subtitulo">Soy parte de un subtitulo</h2>
+
+    <!-- FUNFACT
+        Si escribo un # y luego un id que quiera, el sistema lo crea automatico
+    -->
+
+    <div id="prueba">
+        <p>Hola Mundo</p>
+    </div>
+</body>
+</html>
