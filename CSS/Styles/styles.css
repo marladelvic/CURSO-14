@@ -28,4 +28,117 @@ h3 {
     letter-spacing: 10px;
     word-spacing: 10px;
     line-height: 40px;
+
+    /* Como trabajar con bordes */
+    
+    /* 
+    border-color: #3a86ff;
+    border-style: dotted;
+    border-width: 10px;
+    */
+
+    border: 10px #3a86ff dotted;
+    border-radius: 100%;
+
+    /*
+    FUNFACT
+    margin seria para el exterior caja y 
+    el padding el interior de la caja
+    */
+    
+    /*
+    Margin o Margen> es la distancia de un elemento con respecto a otro
+    va en el sentido de las agujas del reloj si colocas los 4 seguidos
+    ej> 100px (arriba) 30px(derecha) 0px (abajo) 400px (derecha)
+    */
+    
+    margin: 100px;
+    padding: 200px;
+
+    /*
+    Anchura y altura minima significan que 
+    el elemento NUNCA sera mas chiquito que esa medida
+    */
+
+    min-width: 100px;
+    min-height: 100px;
+
+    /*
+    Anchura y altura maxima significan que 
+    el elemento NUNCA sera mas grande que esa medida
+    */
+
+    max-width: 700px;
+    max-height: 700px;
+
+    /*
+    Existen diversas formas de colocar colores
+    en CSS, una de ellas es mencionar el color
+    en idioma ingles, pero también puedes usar
+    codigo Hexadecimal, RGB, RGB, HSL
+    */
+
+    /*
+    color: #5AAADB;
+    color: #faebd7d7;
+    color: rgb(0,0,0);
+    color: rgba(255,50,20,0.50)
+    color: hsl(0, 100%, 50%)
+    */
+
+    /*
+    Si colocas !important luego de una propiedad y etiqueta se va a aplicar porque si
+    NO USARLO, MATA OSOS POLARES
+    */
+
+    /*
+    Con la propiedad opacity juegas con la transparecia del elemento
+    opacity: 80%;
+    */
+
+    /*
+    REM es una medida relativa y una referencia a la medida por default  que tiene
+    una pag web, es realtiva porque puede cambiar dependiendo de la medida  del ancho del navegador
+    es decir, tal elemento 3 veces su medida
+    */
+
+    /*
+    EM usualmente no se usa y hace referencia a la medida del HTML en si
+    */
+
+    /*
+    vw> View width es la medida del ancho del navegador
+    vh> View height es la medida de la altura del navegador
+    */
+
+    width: 100vw;
+    height: 100vh;
+
+
+    /*
+    PSEUDO ELEMENTOS
+    Manejan los estados de un elemento
+    */
+
+    /*
+    Bendito hoover que me cambia la medida
+    #prueba:hover {background-color: #cdb4db; padding: 0;}
+    */
+
+    /*
+    Display como visualizamos las cosas
+    display: none (desaparece el elemento
+    display: flex (es horizontal por default, es decir, filas)
+    */
+
+    display: flex;
+
+    /*Justify> eje principal*/
+
+    justify-content: center;
+
+    /*Align> eje secundario*/
+    
+    align-items: center;
+
 }
